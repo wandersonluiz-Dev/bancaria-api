@@ -22,6 +22,6 @@ public record RegistrationData(
         String cpf,
         @NotNull
         @Valid
-        DataAddress address) {
+        DataAddressCreate address) {
 
 }

@@ -1,6 +1,6 @@
 package com.bancaria.api.customer;
 
-import com.bancaria.api.customer.dto.DataAddress;
+import com.bancaria.api.customer.dto.DataAddressCreate;
 import com.bancaria.api.customer.dto.DataAddressUpdate;
 import jakarta.persistence.Embeddable;
 import jakarta.validation.Valid;
@@ -22,7 +22,7 @@ public class Address {
     private String cep;
     private String uf;
 
-    public Address(DataAddress data) {
+    public Address(DataAddressCreate data) {
         this.logradouro = data.logradouro();
         this.numero = data.numero();
         this.complemento = data.complemento();
